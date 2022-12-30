@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pokemon/cubit/pokemon/cubit.dart';
+import 'package:pokemon/routes/app_routes.dart';
 
-import 'cubit/home_cubit.dart';
 import 'routes/page_routes.dart';
 
 void main() {
@@ -12,18 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => HomeCubit(),
-      child: BlocConsumer<HomeCubit, HomeState>(
-        listener: (context, state) {},
-        builder: (context, state) {
-          return MaterialApp(
-            title: 'Pokemon',
-            routes: routes,
-          );
-        },
+      create: (context) => PokemonCubit(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Pokemon',
+        routes: routes,
+        initialRoute: AppRoutes.opening,
       ),
     );
   }
 }
-
-//create group, video posts

@@ -4,8 +4,8 @@ class Result {
     required this.url,
   });
 
-  String name;
-  String url;
+  final String name;
+  final String url;
 
   factory Result.fromMap(Map<String, dynamic> json) => Result(
         name: json["name"],

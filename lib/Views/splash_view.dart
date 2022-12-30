@@ -11,13 +11,13 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    init();
+    // init();
     super.initState();
   }
 
   void init() async {
     await Future.delayed(Duration(seconds: 5));
-    String route = Routes.Login;
+    String route = AppRoutes.Login;
     Navigator.pushReplacementNamed(context, route);
   }
 

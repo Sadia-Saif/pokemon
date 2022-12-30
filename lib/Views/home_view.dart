@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../Controllers/poke_controller.dart';
-import '../Models/base_model.dart';
+import '../models/base.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

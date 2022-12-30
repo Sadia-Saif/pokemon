@@ -196,7 +196,7 @@ class Login extends StatelessWidget {
                     ),
                     onPressed: () => Navigator.pushReplacementNamed(
                       context,
-                      Routes.Home,
+                      AppRoutes.Home,
                     ),
                     child: const Text(
                       'Log In',
@@ -209,7 +209,7 @@ class Login extends StatelessWidget {
                 GestureDetector(
                   onTap: () => Navigator.pushReplacementNamed(
                     context,
-                    Routes.SignUp,
+                    AppRoutes.SignUp,
                   ),
                   child: RichText(
                     text: TextSpan(

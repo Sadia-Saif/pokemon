@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-import '../Models/base_model.dart';
+import '../models/base.dart';
 
 class PokemonController {
   Future<Base> getPoke(String name, String url) async {
