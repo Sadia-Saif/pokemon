@@ -40,6 +40,9 @@ dependencies:
   equatable: ^2.0.5
   bloc: ^8.1.0
 
+  # firebase
+  # http: ^0.13.5
+
   # network
   http: ^0.13.5
 

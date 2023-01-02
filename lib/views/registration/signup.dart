@@ -1,6 +1,6 @@
-
-
 import 'package:flutter/material.dart';
+
+import '../../routes/app_routes.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -173,7 +173,6 @@ class SignUpScreen extends StatelessWidget {
                   text: TextSpan(
                     text: 'By Continuing,you agree to our ',
                     style: const TextStyle(color: Colors.black, fontSize: 12),
-                   
                     children: <TextSpan>[
                       TextSpan(
                         text: 'Terms of services',
@@ -208,13 +207,12 @@ class SignUpScreen extends StatelessWidget {
                           MaterialStateProperty.all(Colors.yellow.shade600),
                       shape: MaterialStateProperty.all(
                         RoundedRectangleBorder(
-                          
                           borderRadius: BorderRadius.circular(30),
                         ),
                       ),
                     ),
-                    
-                    onPressed: () {},
+                    onPressed: (() =>
+                        Navigator.pushReplacementNamed(context, Routes.login)),
                     child: const Text(
                       'Create acoount',
                       style: TextStyle(
@@ -224,12 +222,12 @@ class SignUpScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 30),
                 GestureDetector(
-                  
+                  onTap: () =>
+                      Navigator.pushReplacementNamed(context, Routes.login),
                   child: RichText(
                     text: TextSpan(
                       text: 'Already a member? ',
                       style: const TextStyle(color: Colors.black, fontSize: 12),
-                     
                       children: <TextSpan>[
                         TextSpan(
                           text: 'Log in',

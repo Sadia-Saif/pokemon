@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void init() async {
     await Future.delayed(Duration(seconds: 5));
-    String route = Routes.login;
+    String route = Routes.signUp;
     Navigator.pushReplacementNamed(context, route);
   }
 
