@@ -1,10 +1,9 @@
 # pokemon
 
-A new Flutter project.
+A Pokemon app using Flutter technology along with firebase authentication & API Integration.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
