@@ -1,4 +1,4 @@
-# pokemon
+# Pokemon
 
 A Pokemon app using Flutter technology along with firebase authentication & API Integration.
 
