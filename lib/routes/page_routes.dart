@@ -1,16 +1,18 @@
-// ignore_for_file: equal_keys_in_map
+
 
 import 'package:flutter/material.dart';
-import 'package:pokemon/Views/home_view.dart';
 
-import '../Views/auth/login_view.dart';
-import '../Views/auth/signup_view.dart';
-import '../Views/splash_view.dart';
+import '../views/favourite.dart';
+import '../views/registration/home.dart';
+import '../views/registration/login.dart';
+import '../views/registration/signup.dart';
+import '../views/splash.dart';
 import 'app_routes.dart';
 
 Map<String, WidgetBuilder> routes = {
-  Routes.Splash: (_) => SplashScreen(),
-  Routes.SignUp: (_) => SignUp(),
-  Routes.Login: (_) => Login(),
-  Routes.Home: (_) => HomeScreen(),
+  Routes.splash: (context) => SplashScreen(),
+  Routes.signUp: (context) => SignUpScreen(),
+  Routes.login: (context) => LoginScreen(),
+  Routes.home: (context) => HomeScreen(),
+  Routes.favourite: (context) => FavScreen(),
 };

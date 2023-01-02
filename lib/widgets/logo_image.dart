@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../utils/constants.dart';
+import '../utils/constants/images.dart';
 
 class PokeLogoImage extends StatelessWidget {
   final double size;

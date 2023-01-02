@@ -1,4 +1,4 @@
-# Install script for directory: D:/islamabad office projects/pokemon/windows/runner
+# Install script for directory: D:/pokemon/windows/runner
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

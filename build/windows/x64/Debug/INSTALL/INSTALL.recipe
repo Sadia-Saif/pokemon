@@ -2,19 +2,19 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\islamabad office projects\pokemon\build\windows\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>D:\pokemon\build\windows\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\islamabad office projects\pokemon\build\windows\flutter\x64\Debug\flutter_assemble</FullPath>
+      <FullPath>D:\pokemon\build\windows\flutter\x64\Debug\flutter_assemble</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\islamabad office projects\pokemon\build\windows\runner\Debug\pokemon.exe</FullPath>
+      <FullPath>D:\pokemon\build\windows\runner\Debug\pokemon.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\islamabad office projects\pokemon\build\windows\x64\Debug\ALL_BUILD</FullPath>
+      <FullPath>D:\pokemon\build\windows\x64\Debug\ALL_BUILD</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\islamabad office projects\pokemon\build\windows\x64\Debug\INSTALL</FullPath>
+      <FullPath>D:\pokemon\build\windows\x64\Debug\INSTALL</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

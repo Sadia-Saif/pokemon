@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\islamabad office projects\pokemon\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
+    <ClCompile Include="D:\pokemon\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\islamabad office projects\pokemon\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
+    <ClCompile Include="D:\pokemon\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\islamabad office projects\pokemon\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc">
+    <ClCompile Include="D:\pokemon\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\islamabad office projects\pokemon\windows\flutter\CMakeLists.txt" />
+    <CustomBuild Include="D:\pokemon\windows\flutter\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{B74E3299-2518-3BFB-8B5D-606335E7D3E7}</UniqueIdentifier>
+      <UniqueIdentifier>{D3AAD7DB-0583-3B0D-B57C-3757897B7247}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{2645B01B-24EA-38C8-A127-02AB6753E870}</UniqueIdentifier>
+      <UniqueIdentifier>{4A7932E7-F6D9-389E-8AC6-18529BA0023F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

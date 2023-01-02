@@ -32,11 +32,15 @@ dependencies:
   flutter:
     sdk: flutter
 
-  equatable: ^1.2.5
+  # local cache
+  shared_preferences: ^2.0.15
 
-  shared_preferences: ^0.5.10
+  # state management
   flutter_bloc: ^8.1.1
+  equatable: ^2.0.5
   bloc: ^8.1.0
+
+  # network
   http: ^0.13.5
 
 dev_dependencies:
