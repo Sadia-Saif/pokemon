@@ -1,2 +1,8 @@
 .dart_tool/
-build/
+/build/
+.pub-cache/
+.pub/
+/android/app/debug
+/android/app/profile
+/android/app/release
+.idea/
