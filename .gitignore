@@ -6,3 +6,16 @@
 /android/app/profile
 /android/app/release
 .idea/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.firebase
+/scripts/.vscode/
