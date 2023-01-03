@@ -1,28 +1,28 @@
-import 'dart:convert';
+// import 'dart:convert';
 
-import 'package:http/http.dart' as http;
+// import 'package:http/http.dart' as http;
 
-import '../models/base.dart';
+// import '../models/base.dart';
 
-class PokemonController {
-  Future<Base> getPoke(String name, String url) async {
-    final pokeURL = "https://pokeapi.co/api/v2/pokemon/";
+// class PokemonController {
+//   Future<Base> getPoke(String name, String url) async {
+//     const pokeURL = "https://pokeapi.co/api/v2/pokemon/";
 
-    final response = await http.get(
-      Uri.parse(pokeURL),
-    );
+//     final response = await http.get(
+//       Uri.parse(pokeURL),
+//     );
 
-    if (response.statusCode == 200) {
-      final raw = response.body;
+//     if (response.statusCode == 200) {
+//       final raw = response.body;
 
-      final map = jsonDecode(raw);
+//       final map = jsonDecode(raw);
 
-      final base = Base.fromMap(map);
+//       final base = Base.fromMap(map);
 
-      return base;
-    }
+//       return base;
+//     }
 
-    // Error/Unknown
-    throw 'Some error has occured!';
-  }
-}
+//     // Error/Unknown
+//     throw 'Some error has occured!';
+//   }
+// }

@@ -1,4 +1,4 @@
-abstract class Routes {
+abstract class AppRoutes {
   static const splash = '/';
   static const signUp = '/signup';
   static const login = '/login';
