@@ -2,7 +2,8 @@
 
 A Pokemon app using Flutter technology along with firebase authentication & API Integration.
 
-## Getting Started
+## Getting Started here
+
 
 
 A few resources to get you started if this is your first Flutter project:
