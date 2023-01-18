@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pokemon/cubits/pokemon/cubit.dart';
+import 'package:pokemon/utils/static_assets.dart';
 
 import 'routes/app_routes.dart';
 import 'routes/router.dart';
@@ -24,11 +25,17 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         theme: ThemeData(
-          primaryColor: Colors.yellow,
+          // brightness: Brightness.whit,
+          primaryColor: Colors.yellow.shade600,
           primarySwatch: Colors.yellow,
+          textTheme: const TextTheme(
+            headline1: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
+            headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
+            bodyText2: TextStyle(fontSize: 14.0, fontFamily: ''),
+          ),
         ),
         debugShowCheckedModeBanner: false,
-        title: 'Pokemon',
+        title: StaticAssets.tPokemon,
         routes: router,
         initialRoute: AppRoutes.splash,
       ),

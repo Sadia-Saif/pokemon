@@ -92,6 +92,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "carousel_slider",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/carousel_slider-4.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "characters",
       "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.1",
       "packageUri": "lib/",
@@ -164,6 +170,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "favorite_button",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/favorite_button-0.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "ffi",
       "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-1.2.1",
       "packageUri": "lib/",
@@ -204,6 +216,12 @@
       "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_screenutil",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_screenutil-5.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_test",
@@ -578,7 +596,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-01-03T11:15:25.741204Z",
+  "generated": "2023-01-09T07:53:58.132753Z",
   "generator": "pub",
   "generatorVersion": "2.18.6"
 }
