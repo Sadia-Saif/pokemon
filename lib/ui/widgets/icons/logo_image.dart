@@ -12,7 +12,7 @@ class PokeLogoImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Hero(
-      tag: StaticAssets.poke,
+      tag: StaticAssets.tPokemon,
       child: SizedBox(
         height: size,
         child: Image.asset(

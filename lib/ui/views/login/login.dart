@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pokemon/routes/app_routes.dart';
+import 'package:pokemon/ui/widgets/buttons/app_button.dart';
+import 'package:pokemon/ui/widgets/texts/app_text_fields/custom_text_form_field.dart';
+import 'package:pokemon/ui/widgets/texts/app_text_span/app_text_span.dart';
+
+part 'widgets/forgot_password.dart';
 
 //TODO: remove back button done,
 
@@ -9,9 +14,8 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.transparent,
           elevation: 0.0,
           centerTitle: true,
           title: const Text(
@@ -20,203 +24,104 @@ class LoginScreen extends StatelessWidget {
                 color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
             textAlign: TextAlign.start,
           ),
-          actions: [
-            Container(
-              height: 40.0,
-              width: 40.0,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white,
-              ),
-            ),
-          ],
         ),
-        body: Padding(
+        body: SingleChildScrollView(
           padding: const EdgeInsets.only(left: 30, right: 30, top: 30),
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                const Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
-                    'Welcome!',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25,
-                    ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Welcome!',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 25,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Text(
+                'Login to continue',
+                style: TextStyle(fontSize: 17, color: Colors.grey),
+              ),
+              const SizedBox(height: 25),
+              const Text(
+                'Email',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 5),
+              const CustomTextFormField(
+                hintText: 'Email',
+                obscureText: false,
+              ),
+              const SizedBox(height: 25),
+              const Text(
+                'Password',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 5),
+              CustomTextFormField(
+                hintText: 'Password',
+                sufixIcon: IconButton(
+                  icon: const Icon(
+                    Icons.visibility_off,
+                    color: Colors.black,
                   ),
+                  onPressed: () {},
                 ),
-                const SizedBox(
-                  height: 10,
-                ),
-                const Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
-                    'Login to continue',
-                    style: TextStyle(fontSize: 17, color: Colors.grey),
+                obscureText: true,
+              ),
+              const SizedBox(height: 15),
+              const CustomForgotPassword(),
+              const SizedBox(height: 30),
+              CustomTextSpan(
+                spanText1: 'By Continuing,you agree to our ',
+                spanText2: 'Terms of services',
+                spanText3: ' and ',
+                spanText4: 'privacy policy.',
+                spanColor1: Colors.black,
+                spanColor2: Colors.yellow.shade800,
+                spanColor3: Colors.black,
+                spanColor4: Colors.yellow.shade800,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              SizedBox(
+                height: 40,
+                width: 350,
+                child: AppButton(
+                  onPressed: () => Navigator.pushNamed(
+                    context,
+                    AppRoutes.dashboard,
                   ),
+                  label: 'Log In',
                 ),
-                const SizedBox(height: 25),
-                const Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
-                    'Email',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+              ),
+              const SizedBox(height: 30),
+              GestureDetector(
+                onTap: () => Navigator.pushNamed(
+                  context,
+                  AppRoutes.signUp,
                 ),
-                const SizedBox(height: 5),
-                TextFormField(
-                  decoration: const InputDecoration(
-                    labelText: "Email",
-                    border: OutlineInputBorder(),
-                    errorBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.red, width: 5),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 25),
-                const Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
-                    'Password',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 5),
-                TextFormField(
-                  decoration: InputDecoration(
-                    labelText: "Password",
-                    border: const OutlineInputBorder(),
-                    errorBorder: const OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.red, width: 5),
-                    ),
-                    suffixIcon: IconButton(
-                      icon: const Icon(
-                        Icons.visibility_off,
-                        color: Colors.black,
-                      ),
-                      onPressed: () {},
-                    ),
-                  ),
-                  obscureText: true,
-                ),
-                const SizedBox(height: 15),
-                Row(
-                  children: [
-                    Icon(
-                      Icons.circle_rounded,
-                      color: Colors.green.shade800,
-                      size: 12,
-                    ),
-                    const SizedBox(width: 5),
-                    Align(
-                      alignment: Alignment.topLeft,
-                      child: Text(
-                        'At least 8 characters',
-                        style: TextStyle(
-                            fontSize: 15, color: Colors.green.shade900),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 7),
-                Row(
-                  children: [
-                    Icon(
-                      Icons.circle_rounded,
-                      color: Colors.green.shade800,
-                      size: 12,
-                    ),
-                    const SizedBox(width: 5),
-                    Align(
-                      alignment: Alignment.topLeft,
-                      child: Text(
-                        'Include special characters',
-                        style: TextStyle(
-                            fontSize: 15, color: Colors.green.shade900),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 30),
-                RichText(
+                child: RichText(
                   text: TextSpan(
-                    text: 'By Continuing,you agree to our ',
+                    text: 'Not Have Registered? ',
                     style: const TextStyle(color: Colors.black, fontSize: 12),
                     children: <TextSpan>[
                       TextSpan(
-                        text: 'Terms of services',
-                        style: TextStyle(
-                          color: Colors.yellow.shade800,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                      const TextSpan(
-                        text: ' and',
-                        style: TextStyle(color: Colors.black54),
-                      ),
-                      TextSpan(
-                        text: ' privacy policy.',
-                        style: TextStyle(
-                          color: Colors.yellow.shade800,
-                          decoration: TextDecoration.underline,
-                        ),
+                        text: 'Signup now',
+                        style: TextStyle(color: Colors.yellow.shade900),
                       ),
                     ],
                   ),
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
-                SizedBox(
-                  height: 40,
-                  width: 350,
-                  child: ElevatedButton(
-                    style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Colors.yellow.shade600),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                      ),
-                    ),
-                    onPressed: () => Navigator.pushReplacementNamed(
-                      context,
-                      AppRoutes.home,
-                    ),
-                    child: const Text(
-                      'Log In',
-                      style: TextStyle(
-                          color: Colors.black, fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 30),
-                GestureDetector(
-                  onTap: () => Navigator.pushReplacementNamed(
-                    context,
-                    AppRoutes.signUp,
-                  ),
-                  child: RichText(
-                    text: TextSpan(
-                      text: 'Not Have Registered? ',
-                      style: const TextStyle(color: Colors.black, fontSize: 12),
-                      children: <TextSpan>[
-                        TextSpan(
-                          text: 'Signup now',
-                          style: TextStyle(color: Colors.yellow.shade900),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ));
   }
