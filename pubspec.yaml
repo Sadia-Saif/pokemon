@@ -32,6 +32,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+  authentication_repository:
+    path: packages/authentication_repository
+
   # local cache
   shared_preferences: ^2.0.15
 
@@ -45,12 +48,22 @@ dependencies:
 
   
   # firebase
+  firebase_core: ^2.4.1
+  form_inputs:
+    path: packages/form_inputs
+  formz: ^0.4.1
+
   # http: ^0.13.5
 
   # network
   http: ^0.13.5
   flutter_screenutil: ^5.6.0
   carousel_slider: ^4.2.1
+  
+  change_app_package_name: ^1.1.0
+ 
+
+
 
 
 dev_dependencies:

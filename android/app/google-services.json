@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "883394750750",
+    "project_id": "pokemon-c2925",
+    "storage_bucket": "pokemon-c2925.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883394750750:android:0f887a1e98c86c9edc410f",
+        "android_client_info": {
+          "package_name": "com.apifictech.pokemon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883394750750-e31n5g7n51sgsirdfi3sdf9k7gpqn1gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGtT3qsFFJ91foLRsRzN-ELQxCbtxrvPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883394750750-e31n5g7n51sgsirdfi3sdf9k7gpqn1gl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "883394750750-9c30mqn596s7t63da3pa77f2cl5p8qhl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pokemon"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

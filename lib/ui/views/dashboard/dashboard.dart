@@ -7,6 +7,8 @@ import 'package:pokemon/utils/static_assets.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
+  
+  static Page<void> page() => const MaterialPage<void>(child: DashboardScreen());
 
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();

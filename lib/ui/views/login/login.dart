@@ -10,6 +10,7 @@ part 'widgets/forgot_password.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
+  static Page<void> page() => const MaterialPage<void>(child: LoginScreen());
 
   @override
   Widget build(BuildContext context) {
