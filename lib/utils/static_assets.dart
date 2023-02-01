@@ -26,6 +26,10 @@ class StaticAssets {
   // logos
   static const String logo = 'assets/logo/logo.png';
 
+    // illustrations
+  static const phone = "assets/icons/phone.png";
+  static const forgot = "assets/images/forgot.png";
+
   // card images
   static const String location = 'assets/images/location.png';
   static const String electricity = 'assets/images/electricity.png';

@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
-
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pokemon/configs/app_typography_ext.dart';
 import 'package:pokemon/configs/configs.dart';
-
 
 class CustomTextField extends StatefulWidget {
   final String name;
@@ -88,7 +86,7 @@ class CustomTextFieldState extends State<CustomTextField> {
         FormBuilderTextField(
           controller: widget.controller,
           inputFormatters: widget.inputformatters,
-          
+          style: AppText.b2,
           textCapitalization: widget.textCapitalization,
           enabled: widget.enabled ?? true,
           initialValue: widget.initialValue,

@@ -1,11 +1,8 @@
 part of 'cubit.dart';
 
 // auth_data_provider
-// login (String email, String password) => User (Firebase) -> User? user;
 
-// register (String username, String email, String password) => void
 
-// forgot (String email) => void
 
 class PokemonDataProvider {
   static Future<Base> getPoke() async {
