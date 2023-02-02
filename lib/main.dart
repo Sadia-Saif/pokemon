@@ -1,3 +1,8 @@
+// ignore_for_file: no_leading_underscores_for_local_identifiers
+
+import 'dart:developer';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pokemon/app/bloc_observer.dart';
@@ -15,6 +20,67 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Bloc.observer = AppBlocObserver();
   await Firebase.initializeApp();
+
+  FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+  // # Get Entire collection
+
+  // QuerySnapshot snapshot =
+  // await FirebaseFirestore.instance.collection('users').get();
+  //   for (var doc in snapshot.docs) {
+  //   log(doc.data().toString());
+  // }
+
+  // # Get document with id
+  DocumentSnapshot snapshot = await _firestore
+      .collection('users')
+      .doc('mm3oyrYT9qVcZoovhAJuBay9AQX2')
+      .get();
+  log(snapshot.data().toString());
+
+  // Post data in collection
+  // Map<String, dynamic> newUserData = {
+  //   "name": "Maham",
+  //   "email": "maham@gmail.com"
+  // };
+  // await FirebaseFirestore.instance.collection("users").add(newUserData);
+  // log("new user saved");
+
+  // Post data and make unique id
+  Map<String, dynamic> newUserData = {
+    "name": "Fatima",
+    "email": "fatima@gmail.com"
+  };
+  await _firestore
+      .collection("users")
+      .doc("id_4")
+      .set(newUserData);
+  log("new user saved");
+
+  // Post data and make unique id
+  Map<String, dynamic> newUserData2 = {
+    "name": "maham",
+    "email": "maham@gmail.com"
+  };
+  await _firestore
+      .collection("users")
+      .doc("id_5")
+      .set(newUserData2);
+  log("new user saved");
+
+// Update data
+
+  await _firestore
+      .collection("users")
+      .doc("yPAhWkFdQ7mS80aGG4sR")
+      .update({"name": "Mariyam", "email": "mariyam@gmail.com"});
+  log("new user updated");
+
+// delete data
+
+  await _firestore.collection("users").doc("id_5").delete();
+  log("new user deleted");
+
   runApp(
     const MyApp(),
   );
@@ -59,7 +125,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 
 // class MyApp extends StatelessWidget {
 //   const MyApp({super.key});
