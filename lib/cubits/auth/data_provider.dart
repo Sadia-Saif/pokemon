@@ -4,6 +4,7 @@ class AuthDataProvider {
   static final firebaseAuth = FirebaseAuth.instance;
   static final firestore = FirebaseFirestore.instance;
   static final users = FirebaseFirestore.instance.collection('users');
+  static final usersData = FirebaseFirestore.instance.collection('users');
 
   static Future<AuthData> login(Map<String, dynamic> map) async {
     try {
